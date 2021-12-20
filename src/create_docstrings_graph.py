@@ -614,8 +614,8 @@ def create_docstrings_graph(docstring_dir, out_dir):
 
 if __name__ == "__main__":
     # docstring_dir = ''
-    # docstring_dir = '../data/docstrings-merge-15-22_sample2/'
-    # out_dir = '../data/docstring_graph/' #''/data/analysis_snippets_w_graphs/'
+    # docstring_dir = '../data/docstarings-merge-15-22_sample2/'
+    #     # out_dir = '../data/docstring_graph/' #''/dat/analysis_snippets_w_graphs/'
     # class_map_file =
     parser = argparse.ArgumentParser(description='Hierarchy prediction based on embeddings')
     parser.add_argument('--docstring_dir', type=str, default='../data/docstrings-merge-15-22/',
