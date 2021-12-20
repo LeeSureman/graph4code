@@ -12,4 +12,4 @@ pip install sphinxcontrib.napoleon
 pip install $MODULE
 PYTHONPATH=$PYTHONPATH:../src python src/inspect_docstrings_per_module.py $MODULE $OUTPUT_PATH
 conda deactivate
-conda remove -y --name $1 --all
+#conda remove -y --name $1 --all
