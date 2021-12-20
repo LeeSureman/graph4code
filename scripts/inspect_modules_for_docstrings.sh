@@ -12,6 +12,6 @@ export ANACONDA_HOME=$3
 for f in `cat $TOP_MODULES_TO_INSPECT`;
 do
 
-  bash `pwd`/scripts/ulimitit.sh 300 bash ./inspect_module.sh $f $OUTPUT_PATH $ANACONDA_HOME < /dev/null;
+  bash `pwd`/scripts/ulimitit.sh 300 bash ./scripts/inspect_module.sh $f $OUTPUT_PATH $ANACONDA_HOME < /dev/null;
 
 done
