@@ -79,7 +79,7 @@ analysis_modules = ['BaseException', 'DeprecationWarning', 'Exception',
 for f in glob(sys.argv[1]):
     modules = {}
     with open(f) as input:
-        if f.endswith('.json'):
+        if f.endswith('.json.bz2'):
             data = json.load(input)
             for node in data['turtle_analysis']:
                 if node is None:
