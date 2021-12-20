@@ -1,6 +1,7 @@
 import json
 from glob import glob
 import sys
+import bz2
 
 analysis_modules = ['BaseException', 'DeprecationWarning', 'Exception',
                     'FutureWarning',
@@ -78,7 +79,7 @@ analysis_modules = ['BaseException', 'DeprecationWarning', 'Exception',
 
 for f in glob(sys.argv[1]):
     modules = {}
-    with open(f) as input:
+    with bz2.open(f) as input:
         if f.endswith('.json.bz2'):
             data = json.load(input)
             for node in data['turtle_analysis']:
